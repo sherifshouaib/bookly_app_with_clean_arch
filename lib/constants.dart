@@ -8,3 +8,4 @@ const paddvalue = 30.0;
 
 
 const kFeaturedBox = 'featured_box';
+const kNewestBox = 'newest_box';
