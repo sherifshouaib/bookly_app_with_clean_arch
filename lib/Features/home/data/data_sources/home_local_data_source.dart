@@ -13,13 +13,13 @@ class HomeLocalDataSourceImpl extends HomeLocalDataSource {
   List<BookEntity> fetchFeaturedBooks() {
     var box = Hive.box<BookEntity>(kFeaturedBox);
 
-   return box.values.toList();
+    return box.values.toList();
   }
 
   @override
   List<BookEntity> fetchNewestBooks() {
-    var box = Hive.box<BookEntity>(kFeaturedBox);
+    var box = Hive.box<BookEntity>(kNewestBox);
 
-   return box.values.toList();
+    return box.values.toList();
   }
 }
